@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
+const session = require("express-session");
 
 var ip_address = "127.0.0.1";
 
@@ -15,5 +16,5 @@ app.use(session({
 }));
 
 app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, '../app/build/index.html'));
+  res.sendFile(path.join(__dirname, './app/build/index.html'));
 });
