@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bas Maat – Visitekaartje</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  >
+  <style>
+    @page {
+      size: 91mm 61mm;
+      margin: 0;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    .card {
+      width: 91mm;
+      height: 61mm;
+      background-color: #ffffff;
+      color: #0d0d0d;
+      /* border: 1px solid black; */
+      position: relative;
+      box-sizing: border-box;
+      font-family: 'Space Mono', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .safe-area {
+      width: 85mm;
+      height: 55mm;
+      box-sizing: border-box;
+      /* border: 1px solid black; */
+      position: relative;
+      text-align: left;
+    }
+    h1 {
+      margin: 5mm 0 0 5mm;
+      font-size: 12pt;
+      font-weight: 400;
+    }
+    .subtitle {
+      margin: 1mm 5mm 4mm 5mm;
+      font-size: 8.5pt;
+      font-weight: 400;
+    }
+    .contact-info {
+      margin-top: 8mm;
+      margin-left: 5mm;
+      font-size: 8pt;
+      line-height: 1.4;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    .contact-info span {
+      display: block;
+    }
+    .icons {
+      margin-top: 1.5mm;
+    }
+    .icon {
+      width: 4mm;
+      height: 4mm;
+      vertical-align: middle;
+      margin-right: 2mm;
+    }
+    .qr-code {
+      position: absolute;
+      bottom: 5mm; 
+      right: 5mm;
+      width: 20mm;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="safe-area">
+      <h1>Bas Maat</h1>
+      <div class="subtitle">&lt;Machine Learning &amp; Software Engineer&gt;</div>
+      <div class="contact-info">
+        <span>Phone: +31 6 2133 5749</span>
+        <span>Email: bjmaat@gmail.com</span>
+        <span>Location: The Hague, NL</span>
+        <span>Website: basmaat.com</span>
+        <span>
+          <img class="icon" alt="GITHUB LOGO" srcset="./github-mark-white.svg" style="filter: invert(1);">
+          github.com/Revess
+        </span>
+        <span>
+          <img
+            class="icon"
+            src="./3228550_app_b_w_linkedin_logo_media_icon.svg"
+            alt="LinkedIn"
+            style="filter: invert(1);"
+          >
+          in/bas-m-35b479132/
+        </span>
+      </div>
+      <img
+        class="qr-code"
+        src="./Untitled.svg"
+        alt="QR Code"
+      >
+    </div>
+  </div>
+</body>
+</html>
